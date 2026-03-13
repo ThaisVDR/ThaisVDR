@@ -13,12 +13,12 @@
       
 <div align="center">
 
-  <img align="center" alt="Top Language" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=THAIII2005&theme=apprentice"/>
+  <img align="center" alt="Top Language" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=ThaisVDR&theme=apprentice"/>
 
-  <img align="center" alt="Top Language" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=THAIII2005&theme=apprentice"/>
+  <img align="center" alt="Top Language" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ThaisVDR&theme=apprentice"/>
 <br>
 <br>
-<a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=THAIII2005&theme=dark&hide_border=&short_numbers=&card_width=720" alt="GitHub Streak" /></a>
+<a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=ThaisVDR&theme=dark&hide_border=&short_numbers=&card_width=720" alt="GitHub Streak" /></a>
 </div>
 
 <div align="center" style="display: inline_block"><br>
@@ -64,7 +64,7 @@
 <br>
 
 <div align="center">
-  <p align="center"><img align="center" src="https://komarev.com/ghpvc/?username=THAIII2005&style=flat-square&color=123845" /></p> 
+  <p align="center"><img align="center" src="https://komarev.com/ghpvc/?username=ThaisVDR&style=flat-square&color=123845" /></p> 
 </div>
 
 <br>
