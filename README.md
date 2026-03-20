@@ -63,10 +63,6 @@
 
 <br>
 
-<div align="center">
-  <p align="center"><img align="center" src="https://komarev.com/ghpvc/?username=ThaisVDR&style=flat-square&color=123845" /></p> 
-</div>
-
 <br>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=200&color=timeGradient&descAlign=65&descAlignY=55&reversal=false&section=footer"/>
