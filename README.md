@@ -6,11 +6,6 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F7F7F7&center=true&vCenter=true&width=500&height=65&lines=Hello!+I'm+Tha%C3%ADs+Vit%C3%B3ria;I'm+a+student+of+Software+Engineer;I'm+also+a+Developer+Front-End+and+Mobile;Be+Welcome!" alt="Typing SVG" />
 </div>
 
-<br> 
-<div align="center">
-<a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=ThaisVDR&theme=dark&hide_border=&short_numbers=&card_width=720" alt="GitHub Streak" /></a>
-</div>
-
 <div align="center" style="display: inline_block"><br>
   <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg">
   <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/TypeScript.svg">
