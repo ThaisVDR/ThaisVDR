@@ -38,5 +38,5 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/react-dark.svg"><img alt="React" title="React" src="assets/stack/react-light.svg" height="40"></picture>&nbsp;
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/vercel-dark.svg"><img alt="Vercel" title="Vercel" src="assets/stack/vercel-light.svg" height="40"></picture>&nbsp;
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/vite-dark.svg"><img alt="Vite" title="Vite" src="assets/stack/vite-light.svg" height="40"></picture>&nbsp;
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/tailwind-dark.svg"><img alt="Tailwind CSS" title="Tailwind CSS" src="assets/stack/tailwind-light.svg" height="40"></picture>&nbsp;
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/express-dark.svg"><img alt="Express" title="Express" src="assets/stack/express-light.svg" height="40"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/express-dark.svg"><img alt="Express" title="Express" src="assets/stack/express-light.svg" height="40"></picture>&nbsp;
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/tailwind-dark.svg"><img alt="Tailwind CSS" title="Tailwind CSS" src="assets/stack/tailwind-light.svg" height="40"></picture>
