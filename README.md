@@ -23,12 +23,8 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/vue-dark.svg"><img alt="Vue" title="Vue" src="assets/stack/vue-light.svg" height="40"></picture>&nbsp;
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/js-dark.svg"><img alt="JavaScript" title="JavaScript" src="assets/stack/js-light.svg" height="40"></picture>&nbsp;
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/python-dark.svg"><img alt="Python" title="Python" src="assets/stack/python-light.svg" height="40"></picture>&nbsp;
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/java-dark.svg"><img alt="Java" title="Java" src="assets/stack/java-light.svg" height="40"></picture>&nbsp;
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/css-dark.svg"><img alt="CSS" title="CSS" src="assets/stack/css-light.svg" height="40"></picture>&nbsp;
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/kotlin-dark.svg"><img alt="Kotlin" title="Kotlin" src="assets/stack/kotlin-light.svg" height="40"></picture>&nbsp;
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/docker-dark.svg"><img alt="Docker" title="Docker" src="assets/stack/docker-light.svg" height="40"></picture>&nbsp;
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/react-dark.svg"><img alt="React" title="React" src="assets/stack/react-light.svg" height="40"></picture>&nbsp;
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/vercel-dark.svg"><img alt="Vercel" title="Vercel" src="assets/stack/vercel-light.svg" height="40"></picture>&nbsp;
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/vite-dark.svg"><img alt="Vite" title="Vite" src="assets/stack/vite-light.svg" height="40"></picture>&nbsp;
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/tailwind-dark.svg"><img alt="Tailwind CSS" title="Tailwind CSS" src="assets/stack/tailwind-light.svg" height="40"></picture>&nbsp;
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/express-dark.svg"><img alt="Express" title="Express" src="assets/stack/express-light.svg" height="40"></picture>

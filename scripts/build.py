@@ -295,20 +295,19 @@ def ago(iso):
 
 def header(t, s):
     w, h = 840, 200
-    words = ["apps em java", "scripts em python", "consultas em sql", "código limpo"]
+    words = ["apps em react", "scripts em python", "consultas em sql", "código limpo"]
     cycle = len(words) * 3
     pct = 100 / len(words)
     cyc = []
     for i, word in enumerate(words):
         cyc.append(
-            f'<text x="2" y="160" class="word" style="animation-delay:{1.4 + i * 3}s">'
-            f'<tspan class="ghost">i build </tspan><tspan class="hl a4">{escape(word)}</tspan></text>'
+            f'<text x="2" y="186" class="word" style="animation-delay:{1.4 + i * 3}s">'
+            f'<tspan class="hl a4">{escape(word)}</tspan></text>'
         )
     top = s["langs"][0][0].lower() if s["langs"] else "-"
     rows = [
-        ("latest", s["latest"]["name"]),
         ("pushed", ago(s["latest"]["pushedAt"])),
-        ("streak", f"{s['current']} days"),
+        ("streak", f"{s['current']} day{'s' if s['current'] != 1 else ''}"),
         ("top lang", top),
     ]
     if BASED_IN:
@@ -323,8 +322,7 @@ def header(t, s):
             f'<text x="{px + pw - 22}" y="{y}" class="fg mono" font-size="12" text-anchor="end">{escape(v)}</text></g>'
         )
     extra = f"""
-.word{{font-family:{SANS};font-size:22px;opacity:0;animation:cyc {cycle}s ease-in-out infinite}}
-.ghost{{fill:transparent}}
+.word{{font-family:{SANS};font-size:20px;opacity:0;animation:cyc {cycle}s ease-in-out infinite}}
 .hl{{font-weight:500}}
 @keyframes cyc{{0%{{opacity:0}}{pct*0.15:.2f}%{{opacity:1}}{pct*0.85:.2f}%{{opacity:1}}{pct:.2f}%{{opacity:0}}100%{{opacity:0}}}}
 .sep{{stroke:{t['border']};stroke-width:1}}
@@ -334,7 +332,7 @@ def header(t, s):
 <g transform="translate(10,0)">
 <text x="2" y="48" class="mute r" font-size="18">oi, eu sou a</text>
 <text x="0" y="118" class="fg r" font-size="72" font-weight="700" style="animation-delay:.12s">thais</text>
-<text x="2" y="160" class="mute f" font-size="22" style="animation-delay:.9s">eu construo</text>
+<text x="2" y="150" class="mute f" font-size="20" style="animation-delay:.9s">eu construo</text>
 {''.join(cyc)}
 </g>
 <g class="f" style="animation-delay:.4s">
