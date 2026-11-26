@@ -295,7 +295,7 @@ def ago(iso):
 
 def header(t, s):
     w, h = 840, 200
-    words = ["apps em react", "scripts em python", "consultas em sql", "código limpo"]
+    words = ["apps in React", "scripts in Python", "SQL queries", "clean code", "websites in HTML", "styles in CSS"]
     cycle = len(words) * 3
     pct = 100 / len(words)
     cyc = []

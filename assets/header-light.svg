@@ -30,10 +30,10 @@
 .r{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
 .f{opacity:0;animation:fade 1s ease forwards}
 
-   .word{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:22px;opacity:0;animation:cyc 12s ease-in-out infinite}
+   .word{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:22px;opacity:0;animation:cyc 18s ease-in-out infinite}
    .ghost{fill:transparent}
    .hl{font-weight:500}
-    @keyframes cyc{0%{opacity:0}3.75%{opacity:1}21.25%{opacity:1}25.00%{opacity:0}100%{opacity:0}}
+    @keyframes cyc{0%{opacity:0}2.50%{opacity:1}14.17%{opacity:1}16.67%{opacity:0}100%{opacity:0}}
    .sep{stroke:#d9d5ec;stroke-width:1}
    
 </style>
@@ -43,7 +43,7 @@
 <text x="0" y="118" class="fg r" font-size="72" font-weight="700" style="animation-delay:.12s">Thaís Vitória</text>
 <text x="2" y="160" class="mute f" font-size="22" 
 style="animation-delay:.9s">i build</text>
-<text x="2" y="160" class="word" style="animation-delay:1.4s"><tspan class="ghost">i build </tspan><tspan class="hl a4">apps em react</tspan></text><text x="2" y="160" class="word" style="animation-delay:4.4s"><tspan class="ghost">i build </tspan><tspan class="hl a4">scripts em python</tspan></text><text x="2" y="160" class="word" style="animation-delay:7.4s"><tspan class="ghost">i build </tspan><tspan class="hl a4">consultas em sql</tspan></text><text x="2" y="160" class="word" style="animation-delay:10.4s"><tspan class="ghost">i build </tspan><tspan class="hl a4">código limpo</tspan></text>
+<text x="2" y="160" class="word" style="animation-delay:1.4s"><tspan class="ghost">i build </tspan><tspan class="hl a4">apps in React</tspan></text><text x="2" y="160" class="word" style="animation-delay:4.4s"><tspan class="ghost">i build </tspan><tspan class="hl a4">scripts in Python</tspan></text><text x="2" y="160" class="word" style="animation-delay:7.4s"><tspan class="ghost">i build </tspan><tspan class="hl a4">SQL queries</tspan></text><text x="2" y="160" class="word" style="animation-delay:10.4s"><tspan class="ghost">i build </tspan><tspan class="hl a4">clean code</tspan></text><text x="2" y="160" class="word" style="animation-delay:13.4s"><tspan class="ghost">i build </tspan><tspan class="hl a4">websites in HTML</tspan></text><text x="2" y="160" class="word" style="animation-delay:16.4s"><tspan class="ghost">i build </tspan><tspan class="hl a4">styles in CSS</tspan></text>
 </g>
 <g class="f" style="animation-delay:.4s">
 <rect class="card" x="500.5" y="22.5" width="339" height="161" rx="12"/>
