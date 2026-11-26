@@ -331,7 +331,7 @@ def header(t, s):
 {style(t, extra)}
 <g transform="translate(10,0)">
 <text x="2" y="48" class="mute r" font-size="18">oi, eu sou a</text>
-<text x="0" y="118" class="fg r" font-size="72" font-weight="700" style="animation-delay:.12s">thais</text>
+<text x="0" y="118" class="fg r" font-size="72" font-weight="700" style="animation-delay:.12s">Thaís Vitória</text>
 <text x="2" y="150" class="mute f" font-size="20" style="animation-delay:.9s">eu construo</text>
 {''.join(cyc)}
 </g>
@@ -739,8 +739,7 @@ def render_readme(contrib, icons):
 
     text = (
         '<picture><source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">'
-        '<img alt="oi, eu sou a thais" src="assets/header-light.svg" width="100%"></picture>\n\n'
-        '<p align="center"><img src="assets/thais.jpg" width="160" alt="thais" style="border-radius:50%"></p>\n\n'
+        '<img alt="oi, eu sou a Thaís Vitória" src="assets/header-light.svg" width="100%"></picture>\n\n'
         '<p align="center">\n' + "&nbsp;".join(link_tags) + '\n</p>\n\n'
         '<br>\n\n'
         '### contributed to\n\n' + contrib_block + '\n\n<br>\n\n'
