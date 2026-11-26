@@ -332,7 +332,7 @@ def header(t, s):
 <g transform="translate(10,0)">
 <text x="2" y="48" class="mute r" font-size="18">oi, eu sou a</text>
 <text x="0" y="118" class="fg r" font-size="72" font-weight="700" style="animation-delay:.12s">Thaís Vitória</text>
-<text x="2" y="150" class="mute f" font-size="20" style="animation-delay:.9s">eu construo</text>
+<text x="2" y="160" class="mute f" font-size="22" style="animation-delay:.9s">eu construo</text>
 {''.join(cyc)}
 </g>
 <g class="f" style="animation-delay:.4s">
