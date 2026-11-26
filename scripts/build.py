@@ -302,7 +302,7 @@ def header(t, s):
     for i, word in enumerate(words):
         cyc.append(
             f'<text x="2" y="160" class="word" style="animation-delay:{1.4 + i * 3}s">'
-            f'<tspan class="hl a4">{escape(word)}</tspan></text>'
+            f'<tspan class="ghost">eu construo </tspan><tspan class="hl a4">{escape(word)}</tspan></text>'
         )
     top = s["langs"][0][0].lower() if s["langs"] else "-"
     rows = [
