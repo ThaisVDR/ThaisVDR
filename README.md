@@ -6,6 +6,14 @@
 
 <br>
 
+### contributed to
+
+<a href="https://github.com/JhonW67/PPS_Atividades/issues?q=is%3Aissue+author%3AThaisVDR"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contrib-jhonw67-pps_atividades-dark.svg"><img alt="JhonW67 / PPS_Atividades" src="assets/contrib-jhonw67-pps_atividades-light.svg" width="49%"></picture></a>&nbsp;<a href="https://github.com/laramaia/GestorTEA/issues?q=is%3Aissue+author%3AThaisVDR"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contrib-laramaia-gestortea-dark.svg"><img alt="laramaia / GestorTEA" src="assets/contrib-laramaia-gestortea-light.svg" width="49%"></picture></a>
+
+<a href="https://github.com/laramaia/desenvolvimento-tea-game/issues?q=is%3Aissue+author%3AThaisVDR"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contrib-laramaia-desenvolvimento-tea-game-dark.svg"><img alt="laramaia / desenvolvimento-tea-game" src="assets/contrib-laramaia-desenvolvimento-tea-game-light.svg" width="49%"></picture></a>
+
+<br>
+
 ### activity
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img alt="activity" src="assets/stats-light.svg" width="100%"></picture>
