@@ -5,8 +5,6 @@
 
 <br>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/runners-dark.svg"><img alt="" src="assets/runners-light.svg" width="100%"></picture>
-
 
 ### activity
 
