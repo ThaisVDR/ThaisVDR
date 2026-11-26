@@ -294,7 +294,6 @@ def ago(iso):
 
 
 def header(t, s):
-    WORD_X = 118 
     w, h = 840, 200
     words = ["apps em react", "scripts em python", "consultas em sql", "código limpo"]
     cycle = len(words) * 3
@@ -302,7 +301,7 @@ def header(t, s):
     cyc = []
     for i, word in enumerate(words):
         cyc.append(
-            f'<text x="{WORD_X}" y="150" class="word" style="animation-delay:{1.4 + i * 3}s">'
+            f'<text x="2" y="160" class="word" style="animation-delay:{1.4 + i * 3}s">'
             f'<tspan class="hl a4">{escape(word)}</tspan></text>'
         )
     top = s["langs"][0][0].lower() if s["langs"] else "-"
@@ -332,8 +331,8 @@ def header(t, s):
 {style(t, extra)}
 <g transform="translate(10,0)">
 <text x="2" y="48" class="mute r" font-size="18">oi, eu sou a</text>
-<text x="{WORD_X}" y="118" class="fg r" font-size="72" font-weight="700" style="animation-delay:.12s">Thaís Vitória</text>
-<text x="{WORD_X}" y="150" class="mute f" font-size="20" style="animation-delay:.9s">eu construo</text>
+<text x="0" y="118" class="fg r" font-size="72" font-weight="700" style="animation-delay:.12s">Thaís Vitória</text>
+<text x="2" y="150" class="mute f" font-size="20" style="animation-delay:.9s">eu construo</text>
 {''.join(cyc)}
 </g>
 <g class="f" style="animation-delay:.4s">
