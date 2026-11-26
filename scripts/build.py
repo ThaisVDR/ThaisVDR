@@ -321,18 +321,22 @@ def header(t, s):
             f'<text x="{px + 22}" y="{y}" class="faint" font-size="12">{k}</text>'
             f'<text x="{px + pw - 22}" y="{y}" class="fg mono" font-size="12" text-anchor="end">{escape(v)}</text></g>'
         )
+    
     extra = f"""
-.word{{font-family:{SANS};font-size:20px;opacity:0;animation:cyc {cycle}s ease-in-out infinite}}
-.hl{{font-weight:500}}
-@keyframes cyc{{0%{{opacity:0}}{pct*0.15:.2f}%{{opacity:1}}{pct*0.85:.2f}%{{opacity:1}}{pct:.2f}%{{opacity:0}}100%{{opacity:0}}}}
-.sep{{stroke:{t['border']};stroke-width:1}}
-"""
+   .word{{font-family:{SANS};font-size:22px;opacity:0;animation:cyc {cycle}s ease-in-out infinite}}
+   .ghost{{fill:transparent}}
+   .hl{{font-weight:500}}
+    @keyframes cyc{{0%{{opacity:0}}{pct*0.15:.2f}%{{opacity:1}}{pct*0.85:.2f}%{{opacity:1}}{pct:.2f}%{{opacity:0}}100%{{opacity:0}}}}
+   .sep{{stroke:{t['border']};stroke-width:1}}
+   """
+
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
 {style(t, extra)}
 <g transform="translate(10,0)">
 <text x="2" y="48" class="mute r" font-size="18">oi, eu sou a</text>
 <text x="0" y="118" class="fg r" font-size="72" font-weight="700" style="animation-delay:.12s">Thaís Vitória</text>
-<text x="2" y="160" class="mute f" font-size="22" style="animation-delay:.9s">eu construo</text>
+<text x="2" y="160" class="mute f" font-size="22" 
+style="animation-delay:.9s">eu construo</text>
 {''.join(cyc)}
 </g>
 <g class="f" style="animation-delay:.4s">
