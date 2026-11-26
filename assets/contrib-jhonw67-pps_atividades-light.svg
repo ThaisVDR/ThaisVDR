@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="132" viewBox="0 0 410 132">
+<style>
+@keyframes d1{0.00%{fill:#c3c1d7}9.17%{fill:#c3c1d7}16.67%{fill:#cac1d7}25.83%{fill:#cac1d7}33.33%{fill:#d2c1d7}42.50%{fill:#d2c1d7}50.00%{fill:#d7c1cc}59.17%{fill:#d7c1cc}66.67%{fill:#d7c3c1}75.83%{fill:#d7c3c1}83.33%{fill:#c1cad7}92.50%{fill:#c1cad7}100.00%{fill:#c3c1d7}}
+@keyframes e1{0.00%{stroke:#c3c1d7}9.17%{stroke:#c3c1d7}16.67%{stroke:#cac1d7}25.83%{stroke:#cac1d7}33.33%{stroke:#d2c1d7}42.50%{stroke:#d2c1d7}50.00%{stroke:#d7c1cc}59.17%{stroke:#d7c1cc}66.67%{stroke:#d7c3c1}75.83%{stroke:#d7c3c1}83.33%{stroke:#c1cad7}92.50%{stroke:#c1cad7}100.00%{stroke:#c3c1d7}}
+.a1{animation:d1 72s ease-in-out infinite}
+.s1{animation:e1 72s ease-in-out infinite}
+@keyframes d2{0.00%{fill:#9692bf}9.17%{fill:#9692bf}16.67%{fill:#a592bf}25.83%{fill:#a592bf}33.33%{fill:#b492bf}42.50%{fill:#b492bf}50.00%{fill:#bf92a8}59.17%{fill:#bf92a8}66.67%{fill:#bf9692}75.83%{fill:#bf9692}83.33%{fill:#92a5bf}92.50%{fill:#92a5bf}100.00%{fill:#9692bf}}
+@keyframes e2{0.00%{stroke:#9692bf}9.17%{stroke:#9692bf}16.67%{stroke:#a592bf}25.83%{stroke:#a592bf}33.33%{stroke:#b492bf}42.50%{stroke:#b492bf}50.00%{stroke:#bf92a8}59.17%{stroke:#bf92a8}66.67%{stroke:#bf9692}75.83%{stroke:#bf9692}83.33%{stroke:#92a5bf}92.50%{stroke:#92a5bf}100.00%{stroke:#9692bf}}
+.a2{animation:d2 72s ease-in-out infinite}
+.s2{animation:e2 72s ease-in-out infinite}
+@keyframes d3{0.00%{fill:#6660a9}9.17%{fill:#6660a9}16.67%{fill:#7e60a9}25.83%{fill:#7e60a9}33.33%{fill:#9760a9}42.50%{fill:#9760a9}50.00%{fill:#a96085}59.17%{fill:#a96085}66.67%{fill:#a96660}75.83%{fill:#a96660}83.33%{fill:#607ea9}92.50%{fill:#607ea9}100.00%{fill:#6660a9}}
+@keyframes e3{0.00%{stroke:#6660a9}9.17%{stroke:#6660a9}16.67%{stroke:#7e60a9}25.83%{stroke:#7e60a9}33.33%{stroke:#9760a9}42.50%{stroke:#9760a9}50.00%{stroke:#a96085}59.17%{stroke:#a96085}66.67%{stroke:#a96660}75.83%{stroke:#a96660}83.33%{stroke:#607ea9}92.50%{stroke:#607ea9}100.00%{stroke:#6660a9}}
+.a3{animation:d3 72s ease-in-out infinite}
+.s3{animation:e3 72s ease-in-out infinite}
+@keyframes d4{0.00%{fill:#433e79}9.17%{fill:#433e79}16.67%{fill:#573e79}25.83%{fill:#573e79}33.33%{fill:#6a3e79}42.50%{fill:#6a3e79}50.00%{fill:#793e5c}59.17%{fill:#793e5c}66.67%{fill:#79433e}75.83%{fill:#79433e}83.33%{fill:#3e5779}92.50%{fill:#3e5779}100.00%{fill:#433e79}}
+@keyframes e4{0.00%{stroke:#433e79}9.17%{stroke:#433e79}16.67%{stroke:#573e79}25.83%{stroke:#573e79}33.33%{stroke:#6a3e79}42.50%{stroke:#6a3e79}50.00%{stroke:#793e5c}59.17%{stroke:#793e5c}66.67%{stroke:#79433e}75.83%{stroke:#79433e}83.33%{stroke:#3e5779}92.50%{stroke:#3e5779}100.00%{stroke:#433e79}}
+.a4{animation:d4 72s ease-in-out infinite}
+.s4{animation:e4 72s ease-in-out infinite}
+.bg{fill:#f6f5fb}
+.card{fill:#ffffff;stroke:#d9d5ec;stroke-width:1}
+.fg{fill:#17142f;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif}
+.mute{fill:#5b5575;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif}
+.faint{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace}
+.ico,.arrow,.ic{animation:e3 72s ease-in-out infinite}
+.tag{animation:e2 72s ease-in-out infinite}
+.mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes draw{to{stroke-dashoffset:0}}
+.r{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+.f{opacity:0;animation:fade 1s ease forwards}
+
+.edge{fill:none;stroke:#17142f;stroke-width:1.2;stroke-dasharray:1100;stroke-dashoffset:1100;opacity:.55;animation:draw 1.8s cubic-bezier(.6,0,.2,1) 0.00s forwards, fade-out 1.2s ease 1.90s forwards, e4 72s ease-in-out infinite}
+@keyframes fade-out{to{opacity:0}}
+.tag{fill:none;stroke:#d9d5ec}
+.arrow{stroke:#5b5575;stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.ico{stroke:#5b5575;stroke-width:1.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dotfill{fill:#5b5575}
+
+</style>
+<g class="a3">
+<rect class="card" x=".5" y=".5" width="409" height="131" rx="12"/>
+<rect class="edge" x=".5" y=".5" width="409" height="131" rx="12"/>
+<text x="24" y="38" class="fg r" font-size="17" font-weight="600" style="animation-delay:0.20s"><tspan class="mute" font-weight="400">JhonW67 / </tspan>PPS_Atividades</text>
+<g class="r" style="animation-delay:0.30s"><path class="arrow" d="M376 26 l8 8 l-8 8 M368 34 h15"/></g>
+<text x="24" y="62" class="mute r" font-size="13" style="animation-delay:0.40s">repositorio para entrega de atividade de</text>
+<text x="24" y="80" class="mute r" font-size="13" style="animation-delay:0.48s">Padrões de Projetos</text>
+<g class="f" style="animation-delay:0.70s"><rect class="tag" x="24" y="96" width="90" height="20" rx="10"/><text x="33" y="110" class="faint" font-size="11">typescript</text></g>
+<g class="f" style="animation-delay:0.80s"><g class="ico" transform="translate(366.8,106)"><path d="M0.00 -6.20 L1.59 -2.18 L5.90 -1.92 L2.57 0.83 L3.64 5.02 L0.00 2.70 L-3.64 5.02 L-2.57 0.83 L-5.90 -1.92 L-1.59 -2.18Z"/></g><text x="378.8" y="110.5" class="mute mono" font-size="12">0</text></g>
+</g>
+</svg>

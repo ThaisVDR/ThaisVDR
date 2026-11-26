@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="96" viewBox="0 0 840 96">
+<style>
+@keyframes d1{0.00%{fill:#c3c1d7}9.17%{fill:#c3c1d7}16.67%{fill:#cac1d7}25.83%{fill:#cac1d7}33.33%{fill:#d2c1d7}42.50%{fill:#d2c1d7}50.00%{fill:#d7c1cc}59.17%{fill:#d7c1cc}66.67%{fill:#d7c3c1}75.83%{fill:#d7c3c1}83.33%{fill:#c1cad7}92.50%{fill:#c1cad7}100.00%{fill:#c3c1d7}}
+@keyframes e1{0.00%{stroke:#c3c1d7}9.17%{stroke:#c3c1d7}16.67%{stroke:#cac1d7}25.83%{stroke:#cac1d7}33.33%{stroke:#d2c1d7}42.50%{stroke:#d2c1d7}50.00%{stroke:#d7c1cc}59.17%{stroke:#d7c1cc}66.67%{stroke:#d7c3c1}75.83%{stroke:#d7c3c1}83.33%{stroke:#c1cad7}92.50%{stroke:#c1cad7}100.00%{stroke:#c3c1d7}}
+.a1{animation:d1 72s ease-in-out infinite}
+.s1{animation:e1 72s ease-in-out infinite}
+@keyframes d2{0.00%{fill:#9692bf}9.17%{fill:#9692bf}16.67%{fill:#a592bf}25.83%{fill:#a592bf}33.33%{fill:#b492bf}42.50%{fill:#b492bf}50.00%{fill:#bf92a8}59.17%{fill:#bf92a8}66.67%{fill:#bf9692}75.83%{fill:#bf9692}83.33%{fill:#92a5bf}92.50%{fill:#92a5bf}100.00%{fill:#9692bf}}
+@keyframes e2{0.00%{stroke:#9692bf}9.17%{stroke:#9692bf}16.67%{stroke:#a592bf}25.83%{stroke:#a592bf}33.33%{stroke:#b492bf}42.50%{stroke:#b492bf}50.00%{stroke:#bf92a8}59.17%{stroke:#bf92a8}66.67%{stroke:#bf9692}75.83%{stroke:#bf9692}83.33%{stroke:#92a5bf}92.50%{stroke:#92a5bf}100.00%{stroke:#9692bf}}
+.a2{animation:d2 72s ease-in-out infinite}
+.s2{animation:e2 72s ease-in-out infinite}
+@keyframes d3{0.00%{fill:#6660a9}9.17%{fill:#6660a9}16.67%{fill:#7e60a9}25.83%{fill:#7e60a9}33.33%{fill:#9760a9}42.50%{fill:#9760a9}50.00%{fill:#a96085}59.17%{fill:#a96085}66.67%{fill:#a96660}75.83%{fill:#a96660}83.33%{fill:#607ea9}92.50%{fill:#607ea9}100.00%{fill:#6660a9}}
+@keyframes e3{0.00%{stroke:#6660a9}9.17%{stroke:#6660a9}16.67%{stroke:#7e60a9}25.83%{stroke:#7e60a9}33.33%{stroke:#9760a9}42.50%{stroke:#9760a9}50.00%{stroke:#a96085}59.17%{stroke:#a96085}66.67%{stroke:#a96660}75.83%{stroke:#a96660}83.33%{stroke:#607ea9}92.50%{stroke:#607ea9}100.00%{stroke:#6660a9}}
+.a3{animation:d3 72s ease-in-out infinite}
+.s3{animation:e3 72s ease-in-out infinite}
+@keyframes d4{0.00%{fill:#433e79}9.17%{fill:#433e79}16.67%{fill:#573e79}25.83%{fill:#573e79}33.33%{fill:#6a3e79}42.50%{fill:#6a3e79}50.00%{fill:#793e5c}59.17%{fill:#793e5c}66.67%{fill:#79433e}75.83%{fill:#79433e}83.33%{fill:#3e5779}92.50%{fill:#3e5779}100.00%{fill:#433e79}}
+@keyframes e4{0.00%{stroke:#433e79}9.17%{stroke:#433e79}16.67%{stroke:#573e79}25.83%{stroke:#573e79}33.33%{stroke:#6a3e79}42.50%{stroke:#6a3e79}50.00%{stroke:#793e5c}59.17%{stroke:#793e5c}66.67%{stroke:#79433e}75.83%{stroke:#79433e}83.33%{stroke:#3e5779}92.50%{stroke:#3e5779}100.00%{stroke:#433e79}}
+.a4{animation:d4 72s ease-in-out infinite}
+.s4{animation:e4 72s ease-in-out infinite}
+.bg{fill:#f6f5fb}
+.card{fill:#ffffff;stroke:#d9d5ec;stroke-width:1}
+.fg{fill:#17142f;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif}
+.mute{fill:#5b5575;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif}
+.faint{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace}
+.ico,.arrow,.ic{animation:e3 72s ease-in-out infinite}
+.tag{animation:e2 72s ease-in-out infinite}
+.mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes draw{to{stroke-dashoffset:0}}
+.r{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+.f{opacity:0;animation:fade 1s ease forwards}
+
+.seg{transform-box:fill-box;transform-origin:left;transform:scaleX(0)}
+@keyframes grow{to{transform:scaleX(1)}}
+@keyframes regrow{0%{transform:scaleX(1)}3%{transform:scaleX(0)}9%{transform:scaleX(1)}100%{transform:scaleX(1)}}
+
+</style>
+<g class="a3">
+<rect class="card" x=".5" y=".5" width="839" height="95" rx="12"/>
+<clipPath id="c"><rect x="24" y="28" width="792" height="8" rx="4"/></clipPath>
+<g clip-path="url(#c)"><g class="a4"><rect class="seg" x="24.00" y="28" width="319.75" height="8" rx="2" style="animation:grow 1s cubic-bezier(.6,0,.2,1) 0.10s forwards,regrow 14s cubic-bezier(.4,0,.2,1) 4.10s infinite"/></g><g class="a3"><rect class="seg" x="345.75" y="28" width="152.40" height="8" rx="2" style="animation:grow 1s cubic-bezier(.6,0,.2,1) 0.22s forwards,regrow 14s cubic-bezier(.4,0,.2,1) 4.22s infinite"/></g><g class="a2"><rect class="seg" x="500.15" y="28" width="100.89" height="8" rx="2" style="animation:grow 1s cubic-bezier(.6,0,.2,1) 0.34s forwards,regrow 14s cubic-bezier(.4,0,.2,1) 4.34s infinite"/></g><g class="a1"><rect class="seg" x="603.04" y="28" width="78.47" height="8" rx="2" style="animation:grow 1s cubic-bezier(.6,0,.2,1) 0.46s forwards,regrow 14s cubic-bezier(.4,0,.2,1) 4.46s infinite"/></g><g class="a1"><rect class="seg" x="683.51" y="28" width="41.08" height="8" rx="2" style="animation:grow 1s cubic-bezier(.6,0,.2,1) 0.58s forwards,regrow 14s cubic-bezier(.4,0,.2,1) 4.58s infinite"/></g><g class="a1"><rect class="seg" x="726.59" y="28" width="87.41" height="8" rx="2" style="animation:grow 1s cubic-bezier(.6,0,.2,1) 0.70s forwards,regrow 14s cubic-bezier(.4,0,.2,1) 4.70s infinite"/></g></g>
+<g class="r" style="animation-delay:0.60s"><g class="a4"><circle cx="29" cy="70" r="4" style="stroke:#d9d5ec"/></g><text x="40" y="74" class="mute" font-size="12">typescript  40.6%</text></g><g class="r" style="animation-delay:0.68s"><g class="a3"><circle cx="181.2" cy="70" r="4" style="stroke:#d9d5ec"/></g><text x="192.2" y="74" class="mute" font-size="12">html  19.5%</text></g><g class="r" style="animation-delay:0.76s"><g class="a2"><circle cx="293.79999999999995" cy="70" r="4" style="stroke:#d9d5ec"/></g><text x="304.79999999999995" y="74" class="mute" font-size="12">vue  13.0%</text></g><g class="r" style="animation-delay:0.84s"><g class="a1"><circle cx="399.79999999999995" cy="70" r="4" style="stroke:#d9d5ec"/></g><text x="410.79999999999995" y="74" class="mute" font-size="12">javascript  10.2%</text></g><g class="r" style="animation-delay:0.92s"><g class="a1"><circle cx="552.0" cy="70" r="4" style="stroke:#d9d5ec"/></g><text x="563.0" y="74" class="mute" font-size="12">java  5.4%</text></g><g class="r" style="animation-delay:1.00s"><g class="a1"><circle cx="658.0" cy="70" r="4" style="stroke:#d9d5ec"/></g><text x="669.0" y="74" class="mute" font-size="12">other  11.3%</text></g>
+</g>
+</svg>
