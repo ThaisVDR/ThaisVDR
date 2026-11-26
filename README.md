@@ -1,7 +1,5 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg"><img alt="oi, eu sou a thais" src="assets/header-light.svg" width="100%"></picture>
 
-<p align="center"><img src="assets/thais.jpg" width="160" alt="thais" style="border-radius:50%"></p>
-
 <p align="center">
 <a href="https://github.com/ThaisVDR"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-github-dark.svg"><img alt="github" src="assets/link-github-light.svg"></picture></a>&nbsp;<a href="mailto:thaisvitoriadr@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-email-dark.svg"><img alt="email" src="assets/link-email-light.svg"></picture></a>
 </p>
