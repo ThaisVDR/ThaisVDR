@@ -302,7 +302,7 @@ def header(t, s):
     for i, word in enumerate(words):
         cyc.append(
             f'<text x="2" y="160" class="word" style="animation-delay:{1.4 + i * 3}s">'
-            f'<tspan class="ghost">eu construo </tspan><tspan class="hl a4">{escape(word)}</tspan></text>'
+            f'<tspan class="ghost">i build </tspan><tspan class="hl a4">{escape(word)}</tspan></text>'
         )
     top = s["langs"][0][0].lower() if s["langs"] else "-"
     rows = [
@@ -333,15 +333,15 @@ def header(t, s):
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
 {style(t, extra)}
 <g transform="translate(10,0)">
-<text x="2" y="48" class="mute r" font-size="18">oi, eu sou a</text>
+<text x="2" y="48" class="mute r" font-size="18">hey there, i'm</text>
 <text x="0" y="118" class="fg r" font-size="72" font-weight="700" style="animation-delay:.12s">Thaís Vitória</text>
 <text x="2" y="160" class="mute f" font-size="22" 
-style="animation-delay:.9s">eu construo</text>
+style="animation-delay:.9s">i build</text>
 {''.join(cyc)}
 </g>
 <g class="f" style="animation-delay:.4s">
 <rect class="card" x="{px + .5}" y="{py + .5}" width="{pw - 1}" height="{ph - 1}" rx="12"/>
-<text x="{px + 22}" y="{py + 29}" class="mute" font-size="12">sobre mim</text>
+<text x="{px + 22}" y="{py + 29}" class="mute" font-size="12">stuff abt me :)</text>
 <line class="sep" x1="{px + 22}" y1="{py + 40}" x2="{px + pw - 22}" y2="{py + 40}"/>
 </g>
 {''.join(panel)}
@@ -716,14 +716,16 @@ def pic(slug, alt, width="49%"):
     )
 
 
-def render_readme(contrib, icons):
-    """Gera o README inteiro a cada execução; não depende de marcadores no arquivo atual."""
+def write_readme(contrib, icons):
     readme = OUT.parent / "README.md"
-
+    text = readme.read_text()
+    start = text.index("### contributed to")
+    end = text.index("### activity")
     links = [f'<a href="{c["url"]}">{pic(c["slug"], c["name"])}</a>' for c in contrib]
     rows = ["&nbsp;".join(links[i:i + 2]) for i in range(0, len(links), 2)]
-    contrib_block = "\n\n".join(rows)
-
+    block = "### contributed to\n\n" + "\n\n".join(rows) + "\n\n<br>\n\n"
+    text = text[:start] + block + text[end:]
+    start = text.index("### stack")
     tiles = []
     for icon in icons:
         name = ICON_NAMES.get(icon, icon)
@@ -731,34 +733,75 @@ def render_readme(contrib, icons):
             f'<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/{icon}-dark.svg">'
             f'<img alt="{name}" title="{name}" src="assets/stack/{icon}-light.svg" height="40"></picture>'
         )
-    stack_block = "&nbsp;\n".join(tiles)
+    text = text[:start] + "### stack\n\n" + "&nbsp;\n".join(tiles) + "\n"
+    readme.write_text(text)
 
-    link_tags = []
-    for slug, label, _ in LINKS:
-        href = {"github": f"https://github.com/{LOGIN}", "email": f"mailto:{label}"}.get(slug, "#")
-        link_tags.append(
-            f'<a href="{href}"><picture><source media="(prefers-color-scheme: dark)" '
-            f'srcset="assets/link-{slug}-dark.svg"><img alt="{slug}" src="assets/link-{slug}-light.svg"></picture></a>'
+
+def runners(t):
+    w, h, ground = 840, 84, 74
+    span = w + 120
+    hurdle = 540
+    figs = [
+        {"dur": 11, "delay": -2.0, "step": 0.42, "jump": False, "flip": False},
+        {"dur": 10.2, "delay": -3.1, "step": 0.4, "jump": False, "flip": False},
+        {"dur": 13, "delay": -8.5, "step": 0.46, "jump": True, "flip": False},
+        {"dur": 16, "delay": -5.0, "step": 0.5, "jump": False, "flip": True},
+    ]
+    f = 100 * (hurdle + 60) / span
+    hop = [(-4, 0), (-3, -9), (-2, -16), (-1, -21), (0, -23), (1, -21), (2, -16), (3, -9), (4, 0)]
+    jump = "".join(f"{f + k * 0.9:.2f}%{{transform:translateY({y}px)}}" for k, y in hop)
+    extra = f"""
+.fig{{fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}}
+@keyframes go{{from{{transform:translateX(-60px)}}to{{transform:translateX({w + 60}px)}}}}
+@keyframes back{{from{{transform:translateX({w + 60}px)}}to{{transform:translateX(-60px)}}}}
+@keyframes thigh{{0%,100%{{transform:rotate(-42deg)}}50%{{transform:rotate(38deg)}}}}
+@keyframes shin{{0%,100%{{transform:rotate(12deg)}}30%{{transform:rotate(18deg)}}55%{{transform:rotate(62deg)}}78%{{transform:rotate(96deg)}}}}
+@keyframes arm{{0%,100%{{transform:rotate(42deg)}}50%{{transform:rotate(-48deg)}}}}
+@keyframes bob{{0%,50%,100%{{transform:translateY(0)}}25%,75%{{transform:translateY(-2.5px)}}}}
+@keyframes hop{{0%,{f - 4 * 0.9:.2f}%,{f + 4 * 0.9:.2f}%,100%{{transform:translateY(0)}}{jump}}}
+.gnd{{stroke-width:1;stroke-dasharray:2 6;fill:none}}
+.hd{{fill:none;stroke-width:1.6;stroke-linecap:round}}
+"""
+    def limb(cls, a, b, step, off, inner=""):
+        return (
+            f'<g style="animation:{cls} {step}s linear {off:.2f}s infinite">'
+            f'<line x1="0" y1="0" x2="0" y2="{a}"/>'
+            f'<g transform="translate(0,{a})"><g style="{inner}"><line x1="0" y1="0" x2="0" y2="{b}"/></g></g></g>'
         )
-
-    text = (
-        '<picture><source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">'
-        '<img alt="oi, eu sou a Thaís Vitória" src="assets/header-light.svg" width="100%"></picture>\n\n'
-        '<p align="center">\n' + "&nbsp;".join(link_tags) + '\n</p>\n\n'
-        '<br>\n\n'
-        '### contributed to\n\n' + contrib_block + '\n\n<br>\n\n'
-        '### activity\n\n'
-        '<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">'
-        '<img alt="activity" src="assets/stats-light.svg" width="100%"></picture>\n\n'
-        '<picture><source media="(prefers-color-scheme: dark)" srcset="assets/ghstats-dark.svg">'
-        '<img alt="github stats" src="assets/ghstats-light.svg" width="100%"></picture>\n\n'
-        '<picture><source media="(prefers-color-scheme: dark)" srcset="assets/langs-dark.svg">'
-        '<img alt="languages" src="assets/langs-light.svg" width="100%"></picture>\n\n'
-        '<br>\n\n'
-        '### stack\n\n' + stack_block + '\n'
-    )
-    readme.write_text(text, encoding="utf-8")
-
+    out = []
+    for i, fg in enumerate(figs):
+        st = fg["step"]
+        half = -st / 2
+        legs = "".join(
+            limb("thigh", 10, 10, st, o, f"animation:shin {st}s linear {o:.2f}s infinite") for o in (0, half)
+        )
+        arms = "".join(
+            limb("arm", 7, 6, st, o, "transform:rotate(-85deg)") for o in (half, 0)
+        )
+        body = (
+            f'<g style="animation:bob {st / 2:.2f}s ease-in-out infinite">'
+            f'<g transform="translate(0,{ground - 20})">'
+            f'{legs}'
+            f'<line x1="0" y1="0" x2="4" y2="-15"/>'
+            f'<g transform="translate(3.4,-12.5)">{arms}</g>'
+            f'<circle class="a4" stroke="none" cx="6" cy="-21" r="4.2"/>'
+            f'</g></g>'
+        )
+        if fg["jump"]:
+            body = f'<g style="animation:hop {fg["dur"]}s linear {fg["delay"]}s infinite">{body}</g>'
+        if fg["flip"]:
+            body = f'<g transform="scale(-1,1)">{body}</g>'
+        move = "back" if fg["flip"] else "go"
+        out.append(
+            f'<g style="animation:{move} {fg["dur"]}s linear {fg["delay"]}s infinite">'
+            f'<g class="s{4 if i % 2 == 0 else 3}"><g class="fig">{body}</g></g></g>'
+        )
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+{style(t, extra)}
+<g class="s1"><line class="gnd" x1="0" y1="{ground + 0.5}" x2="{w}" y2="{ground + 0.5}"/></g>
+<g class="s2"><path class="hd" d="M{hurdle - 7} {ground} v-13 h14 v13 M{hurdle - 7} {ground - 9} h14"/></g>
+{''.join(out)}
+</svg>"""
 
 def tint(svg):
     head, _, body = svg.partition("</style>")
@@ -805,7 +848,7 @@ def main():
         if not any(old.name.startswith(c["slug"] + "-") for c in contrib):
             old.unlink()
 
-    render_readme(contrib, icons)
+    write_readme(contrib, icons)
     print(json.dumps({k: v for k, v in s.items() if k not in ("days", "langs", "latest")}))
 
 
